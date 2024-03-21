@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="uft-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mokepon! </title>
+        <!-- <script defer src='./codigo.js'></script> Variante para hacer que el script se ejecuta una vez se haga cargado el DOM--> 
+        <link rel="stylesheet" href="./styles.css">
+
+    </head>
+    <body>
+        <!-- SECCION ELEGIR MASCOTAS -->
+        <section id="seleccionarMascota">
+            <br><br><h1 class="titulo">HALO GROUNDS</h1>
+            <br><br><h2 class="subtitulo">Selecciona tu personaje:</h2>
+
+            <!-- MASCOTAS -->
+            <div  id="contenedorTarjetas" class="tarjetas">
+                
+
+            </div>
+            <button id="botonMascota">Seleccionar</button> <br><br> <!-- BOTON SELECCIONAR MASCOTA -->
+            
+        </section>
+
+        <section id="ver-mapa">
+            <h1>Recorre el mapa con tu jugador</h1>
+            <canvas id="mapa"></canvas>
+            <div class="move-buttons">
+                <button class="up"  ontouchend="detenerMovimiento()" ontouchstart="moverArriba()" onmouseup="detenerMovimiento()" onmousedown="moverArriba()">🔼</button>
+                <button class="left" ontouchend="detenerMovimiento()" ontouchstart="moverArriba()" onmouseup="detenerMovimiento()" onmousedown="moverIzquierda()">◀</button>
+                <button class="down" ontouchend="detenerMovimiento()" ontouchstart="moverArriba()" onmouseup="detenerMovimiento()" onmousedown="moverAbajo()">🔽</button>
+                <button class="right" ontouchend="detenerMovimiento()" ontouchstart="moverArriba()" onmouseup="detenerMovimiento()" onmousedown="moverDerecha()">▶</button>
+            </div>
+        </section>
+
+            <!-- SECCION ATAQUE -->
+
+        <section id="seleccionarAtaque">
+            <h1 class="titulo2">HALO GROUNDS</h1>
+            <h2 class="eligeAtaque">Elige tu ataque:</h2>
+
+            <div id="ataquesLocacion" class="botonesAtaques">
+
+            </div>
+            
+            
+            <div id = "mensajes">
+                <p id="resultado"></p>
+
+                <section id="reiniciar">
+                    <button id="boton-reiniciar">>Reiniciar</button>
+                </section>
+            </div>
+                
+                <!-- SECCION REINICIAR -->
+
+            
+            <div class="seccionAtaques">
+                <div class="cajita-vidas-jugador">
+                    <p id="mascota-jugador"></p>
+                    <p class="corazoncitos">
+                        <img src="images/health.png" alt="1" id="vida1"> 
+                        <img src="images/health.png" alt="2" id="vida2">
+                        <img src="images/health.png" alt="3" id="vida3">
+                    </p>
+                    <p id="vidas-jugador">0</p>
+                    <div id="ataquesDelJugador"></div>  
+                </div>
+                <div class="cajita-vidas-enemigo">
+                    <p id="mascota-enemigo"></p>
+                    <p class="corazoncitos">
+                        <img src="images/health.png" alt="1" id="vidaEnemigo1"> 
+                        <img src="images/health.png" alt="2" id="vidaEnemigo2">
+                        <img src="images/health.png" alt="3" id="vidaEnemigo3">
+                    </p>
+                    <p id="vidas-enemigo">0</p>
+                    <div id="ataquesDelEnemigo"></div> 
+                </div>
+                               
+            </div>  
+        </section>
+
+        
+
+        
+        
+        <script defer src="./mokepon.js"></script>
+    </body>
+</html>

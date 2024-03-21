@@ -1,0 +1,278 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box
+}
+
+.titulo {
+    color: #d1f7f7;
+    width: 960px;
+    height: 100px;
+    background-color: transparent;
+    font-size: 85px;
+    transform: translateY(10px);
+    
+}
+
+.titulo2 { 
+    color: #d1f7f7;
+    width: 990px;
+    height: 50px;
+    background-color: transparent;
+    font-size: 48px;
+    transform: translateY(28px);
+    
+}
+.subtitulo{
+    color: #d1f7f7;
+    font-family: 'PressStart', sans-serif;
+	font-size: 24px;
+	padding: 1rem;
+    transform: translateY(45px);
+}
+label{
+    color: blueviolet;
+}
+#seleccionarMascota {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+#seleccionarAtaque {
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+
+
+.contenedorHipodoge {
+    display: flex;
+    flex-direction: row;
+}
+body {
+    background-color: rgb(172, 217, 106);
+}
+.tarjetas{
+    font-family: 'PressStart', sans-serif;
+    font-size: 11px;
+    display: flex;
+    gap: 10px;
+    transform: translateY(50px);
+}
+.tarjetas > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Agregamos la propiedad align-items para centrar los elementos verticalmente */
+    margin: 0 10px; /* Agregamos un margen para separar las columnas */
+  }
+.tarjetaDeMokepon{
+    width: 110px;
+    height: 100px;
+    background: #4333f3;
+    opacity: 0.9;
+    color: #d1f7f7;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 5px;
+    border: 1px solid blueviolet;
+    border-radius: 30px;  
+}
+.tarjetaDeMokepon:hover {
+    cursor: pointer;
+}
+.tarjetaDeMokepon img{
+    width: 50px;
+    opacity: 1;
+}
+
+
+input{
+    display: none;
+}
+input:checked + label{
+    opacity: 1;
+    background: #311f47;
+}
+#botonMascota{
+    font-family: 'PressStart', sans-serif;
+    width: 170px;
+    height: 30px;
+    background-color: #4333f3;
+	backdrop-filter: blur(70px);
+	border: 1px solid blueviolet;
+	box-shadow: var(--box-shadow);
+	border-radius: 15px;
+	padding: .7rem10rem;
+	margin-top: 3rem;
+	color: #d1f7f7;
+	cursor: pointer;
+    transform: translateY(20px);
+
+}
+.eligeAtaque{
+    color: #d1f7f7;
+    font-family: 'PressStart', sans-serif;
+	font-size: 24px;
+	padding: 1rem;
+    transform: translateY(48px);
+}
+.botonesAtaques{
+    display: flex;
+    justify-content: center;
+    transform: translateY(40px);
+}
+.tamanoAtaques img{
+    width: 50px;
+    height: 50px;
+    
+}
+.tamanoAtaques{
+    font-family: 'PressStart', sans-serif;
+    width: 155px;
+    height: 75px;
+    background-color: #4333f3;
+    backdrop-filter: blur(70px);
+    border: 1px solid blueviolet;
+    box-shadow: var(--box-shadow);
+    box-sizing: border-box;
+    border-radius: 15px;
+    padding: .7rem10rem;
+    margin: 10px;
+    color: #d1f7f7;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#mensajes{
+    width: 270px;
+    height: 90px;
+    font-family: 'PressStart', sans-serif;
+    color: #d1f7f7;
+    background-color: #4333f3;
+    border: 1px solid blueviolet;
+    transform: translateY(60px);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    flex-direction: column;
+    
+}
+#boton-reiniciar{
+    font-family: 'PressStart', sans-serif;
+    width: 155px;
+    height: 15px;
+    box-sizing: border-box;
+    background-color: #4333f3;
+    border: transparent;
+    color: #d1f7f7;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.cajita-vidas-jugador,.cajita-vidas-enemigo{
+    background-color: #4333f3;
+    border: 1px solid blueviolet;
+    opacity: 0.8;
+    border-radius: 15px;
+}
+.corazoncitos img  {
+    width: 20px;
+    height: 20px;
+}
+.seccionAtaques{
+    font-family: 'PressStart', sans-serif;
+    color: #d1f7f7;
+    font-size: 12px;
+    display: grid;
+    grid-template-columns: 140px 140px;
+    height: 100px;
+    margin-top: 65px;
+    gap: 10px;
+    
+}
+#mascota-jugador, #mascota-enemigo{
+    margin-top: 12px;
+    margin-bottom: 8px;
+}
+#vidas-jugador, #vidas-enemigo{
+    margin-bottom: 8px;
+}
+
+
+body {
+
+	background-image: url(images/HaloFondo2.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	text-align: center;
+}
+
+@font-face {
+    font-family: 'Halo';
+    src: url('fonts/halo.ttf') format('truetype');
+  }
+@font-face {
+    font-family: 'PressStart';
+    src: url('fonts/PressStart2P-Regular.ttf') format('truetype');
+}
+
+  h1 {
+    font-family: 'Halo', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+#ver-mapa{
+    color: #d1f7f7;
+    font-family: 'Halo', sans-serif;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.move-buttons {
+    margin-top: 20px;
+    display: grid;
+    gap: .25rem;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+.move-buttons .up {
+    grid-column: 2 / 3;
+    user-select: none;
+}
+.move-buttons .right {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    user-select: none;
+}
+.move-buttons .down {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    user-select: none;
+}
+.move-buttons .left {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    user-select: none;
+}
+.move-buttons:hover {
+    background-color: rgb(206, 214, 220);
+}
+
+  @media (max-width: 700px){
+    .tarjetas{
+        flex-direction: column;
+    }
+    .botonesAtaques {
+        justify-content: center;
+        transform: translateY(40px);
+        flex-direction: column;
+    }
+  }
